@@ -1,3 +1,8 @@
+def conversor(tipo_pesos, valor_dolar):
+  pesos = float(input('¿Cuántos pesos ' + tipo_pesos + ' tienes?: '))
+  dolares = str(round(pesos / valor_dolar, 2))
+  print('Tienes $' + dolares + ' dólares')
+
 menu = '''
 Bienvenido al conversor de monedas 💰💰💰
 
@@ -10,19 +15,10 @@ Elige una opción: '''
 opcion = int(input(menu))
 
 if opcion == 1:
-  pesos = float(input('¿Cuántos pesos bolivianos tienes?: '))
-  valor_dolar = 7
-  dolares = str(round(pesos / valor_dolar, 2))
-  print('Tienes $' + dolares + ' dólares')
+  conversor('bolivianos', 7)
 elif opcion == 2:
-  pesos = float(input('¿Cuántos pesos argentinos tienes?: '))
-  valor_dolar = 65
-  dolares = str(round(pesos / valor_dolar, 2))
-  print('Tienes $' + dolares + ' dólares')
+  conversor('argentinos', 65)
 elif opcion == 3:
-  pesos = float(input('¿Cuántos pesos mexicanos tienes?: '))
-  valor_dolar = 24
-  dolares = str(round(pesos / valor_dolar, 2))
-  print('Tienes $' + dolares + ' dólares')
+  conversor('mexicanos', 24)
 else:
   print('Ingresa una opción correcta por favor')
