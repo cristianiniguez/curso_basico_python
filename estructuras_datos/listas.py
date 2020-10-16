@@ -29,3 +29,22 @@ for elemento in objetos:
 
 objetos[::-1]  # [1, False, True, 4.5, 'Hola']
 objetos[1:3]  # [4.5, True]
+
+# Clase de tuplas
+
+numeros = [1, 2, 3, 4, 5]
+numeros  # [1, 2, 3, 4, 5]
+
+numeros.append('Hola')
+numeros  # [1, 2, 3, 4, 5, 'Hola']
+
+numeros.pop(5)
+numeros  # [1, 2, 3, 4, 5]
+
+numeros2 = [6, 7, 8, 9]
+numeros2  # [6, 7, 8, 9]
+
+lista_final = numeros + numeros2
+lista_final  # [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+numeros * 3  # [1,2,3,4,5,1,2,3,4,5,1,2,3,4,5]
